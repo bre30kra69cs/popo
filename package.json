@@ -1,5 +1,6 @@
 {
-  "name": "popo",
+  "name": "@bre30kra69cs/popo",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "build": "turbo build",

@@ -1,14 +1,20 @@
 {
-  "name": "@popo/shared-guards",
+  "name": "@bre30kra69cs/shared-guards",
   "version": "0.1.0",
   "main": "./src/index.ts",
+  "license": "MIT",
+  "author": "Andrey Krasovsky <an.krasowsckij@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bre30kra69cs/popo"
+  },
   "scripts": {
     "lint": "eslint . --max-warnings 0",
     "ts:check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@popo/config-eslint": "workspace:*",
-    "@popo/config-typescript": "workspace:*",
+    "@bre30kra69cs/config-eslint": "workspace:*",
+    "@bre30kra69cs/config-typescript": "workspace:*",
     "@types/node": "^22.10.9",
     "prettier": "^3.4.2",
     "typescript": "5.7.3"

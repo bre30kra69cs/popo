@@ -1,8 +1,8 @@
 {
-  "name": "@popo/config-typescript",
-  "version": "0.0.0",
+  "name": "@bre30kra69cs/config-typescript",
+  "version": "0.1.0",
   "private": true,
-  "license": "MIT",
+  "author": "Andrey Krasovsky <an.krasowsckij@gmail.com>",
   "publishConfig": {
     "access": "public"
   }
