@@ -10,6 +10,10 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
       # Setup .npmrc file to publish to GitHub Packages
       - uses: actions/setup-node@v4
         with:
@@ -17,7 +21,8 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           # Defaults to the user or organization that owns the workflow file
           scope: "@bre30kra69cs"
-      - run: npm ci
+          cache: "pnpm"
+      - run: pnpm i --frozen-lockfile
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
